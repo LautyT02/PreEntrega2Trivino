@@ -1,4 +1,44 @@
-body {
+/* Shows grid areas. Delete when finished */
+.border {
+    border: 1px solid black;
+}
+/* Grid SetUp */
+#index-grid{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "card1 dec"
+    "card2 dec"
+    "card3 dec"
+    "card4 dec"
+    "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* Grid Areas */
+.navbar{
+    grid-area: nav;
+}
+#index-about{
+    grid-area: card1;
+}
+#index-contact{
+    grid-area: card2;
+}
+#index-products{
+    grid-area: card3;
+}
+#index-tech-serv{
+    grid-area: card4;
+}
+.decoration{
+    grid-area: dec;
+}
+.footer{
+    grid-area: footer;
+}
+
+/* body {
     margin: 0px 0px;
     background-color: rgba(134, 193, 193, 0.75);    
 }
@@ -10,19 +50,33 @@ body {
      "card-2 decoration"
      "card-3 decoration"
      "card-4 decoration"
-     "footer footer"
-    ;
+     "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px auto auto auto auto 400px;
 }
 .navbar {
+    grid-area: navbar;
     font-size: 20px;
-    height: 200px;
     background-color: brown;
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+#index-about {
+    grid-area: card-1;
+}
+#index-contact {
+    grid-area: card-2;
+}
+#index-products {
+    grid-area: card-3;
+}
+#index-tech-serv {
+    grid-area: card-4;
+}
+.decoration {
+    grid-area: decoration;
+}
 ul {
     list-style-type: none;
 }
@@ -102,11 +156,10 @@ ul {
 }
 
 .footer {
+    grid-area: footer;
     font-size: 20px;
     margin-top: 25px;
     background-color: rgb(99, 141, 213);
-    height: 400px;
-
 }
 
 .footer-list {
@@ -173,4 +226,4 @@ a:hover {
 }
 #img-tech-serv {
     align-self: center;
-}
+} */
