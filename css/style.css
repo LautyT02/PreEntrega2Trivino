@@ -10,8 +10,8 @@ body {
 .border {
     border: 1px solid black;
 }
-/* Index Grid SetUp */
-#index-grid{
+/* Index and About Grid SetUp */
+#index-grid, #about-grid{
     display: grid;
     grid-template-areas:
     "nav nav"
@@ -23,11 +23,17 @@ body {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr auto auto auto auto 1fr;
 }
-/* 4fr 4fr 4fr 4fr */
-/* Index Grid Areas */
+/* NavBar, Decoration and Footer Grid Areas  */
 .navbar{
     grid-area: nav;
 }
+.decoration{
+    grid-area: dec;
+}
+.footer{
+    grid-area: footer;
+}
+/* Index Grid Areas */
 #index-about{
     grid-area: card1;
 }
@@ -40,13 +46,19 @@ body {
 #index-tech-serv{
     grid-area: card4;
 }
-.decoration{
-    grid-area: dec;
+/* About Grid Areas */
+#who-we-are{
+    grid-area: card1;
 }
-.footer{
-    grid-area: footer;
+#history{
+    grid-area: card2;
 }
-
+#seg{
+    grid-area: card3;
+}
+#montepietra{
+    grid-area: card4;
+}
 /* NavBar Style */
 .navbar {
     padding: 15px;
@@ -130,13 +142,13 @@ a:hover {
     flex-direction: row;
 }
 /* P Style */
-#index-about p,
-#who-we-are p,
+
+/* #who-we-are p,
 #montepietra p,
 #seg p,
 #history p {
     max-width: 750px;
-}
+} */
 /* Decoration Style */
 .decoration {
     background-color: lightpink;
@@ -170,8 +182,8 @@ a:hover {
     }
 }
 /* Small Screens */
-@media (max-width: 500px){
-    #index-grid{
+@media (max-width: 520px){
+    #index-grid, #about-grid{
         grid-template-areas:
         "nav nav"
         "card1 card1"
