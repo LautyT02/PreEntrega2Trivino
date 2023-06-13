@@ -1,8 +1,16 @@
+/* CSS Reset and background-color and fontsize establishment */
+html{
+    font-size: 10px;
+}
+body {
+    margin: 0px 0px;
+    background-color: rgba(134, 193, 193, 0.75);    
+}
 /* Shows grid areas. Delete when finished */
 .border {
     border: 1px solid black;
 }
-/* Grid SetUp */
+/* Index Grid SetUp */
 #index-grid{
     display: grid;
     grid-template-areas:
@@ -13,9 +21,9 @@
     "card4 dec"
     "footer footer";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 1fr;
 }
-/* Grid Areas */
+/* Index Grid Areas */
 .navbar{
     grid-area: nav;
 }
@@ -37,66 +45,41 @@
 .footer{
     grid-area: footer;
 }
-
-/* body {
-    margin: 0px 0px;
-    background-color: rgba(134, 193, 193, 0.75);    
-}
-#index-body {
-    display: grid;
-    grid-area:
-     "navbar navbar"
-     "card-1 decoration"
-     "card-2 decoration"
-     "card-3 decoration"
-     "card-4 decoration"
-     "footer footer";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 200px auto auto auto auto 400px;
-}
+/* NavBar Style */
 .navbar {
-    grid-area: navbar;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 2rem;
     background-color: brown;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-weight: 700;
 }
-#index-about {
-    grid-area: card-1;
+.dropdown-item {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-#index-contact {
-    grid-area: card-2;
-}
-#index-products {
-    grid-area: card-3;
-}
-#index-tech-serv {
-    grid-area: card-4;
-}
-.decoration {
-    grid-area: decoration;
-}
-ul {
-    list-style-type: none;
-}
-
 .logo {
     width: 300px;
 }
-
-.menu {
-    display: flex;
-    flex-direction: row;
+/* UL Style */
+ul {
+    list-style-type: none;
+}
+/* Links Style */
+a {
+    color: black;
+    text-decoration: none;
 }
 
-.menu-item {
-    margin: 0px 10px;
-}
-.nav-item {
-    font-weight: 700;
+a:visited {
+    color: black;
 }
 
+a:hover {
+    color: white;
+}
+/* Card Style */
 .card {
     border-radius: 35px;
     font-size: 28px;
@@ -121,7 +104,7 @@ ul {
 }
 
 .card img {
-    min-width: 300px;
+    min-width: 150px;
     max-width: 750px;
 }
 
@@ -131,15 +114,6 @@ ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-#index-about p,
-#who-we-are p,
-#montepietra p,
-#seg p,
-#history p {
-    max-width: 750px;
-}
-
 .card-column {
     margin: 0px 35px;
     display: flex;
@@ -154,12 +128,25 @@ ul {
     justify-content: space-evenly;
     flex-direction: row;
 }
-
+/* P Style */
+#index-about p,
+#who-we-are p,
+#montepietra p,
+#seg p,
+#history p {
+    max-width: 750px;
+}
+/* Decoration Style */
+.decoration {
+    background-color: lightpink;
+}
+/* Footer Style */
 .footer {
-    grid-area: footer;
-    font-size: 20px;
-    margin-top: 25px;
+    padding: 25px;
+    font-size: 2rem;
+
     background-color: rgb(99, 141, 213);
+    
 }
 
 .footer-list {
@@ -167,19 +154,10 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
 }
+/* 
 
-a {
-    color: black;
-    text-decoration: none;
-}
 
-a:visited {
-    color: black;
-}
 
-a:hover {
-    color: white;
-}
 
 .image-selectors {
     margin: 20px 40px;
