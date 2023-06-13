@@ -6,10 +6,6 @@ body {
     margin: 0px 0px;
     background-color: rgba(134, 193, 193, 0.75);    
 }
-/* Shows grid areas. Delete when finished */
-.border {
-    border: 1px solid black;
-}
 /* Index and About Grid SetUp */
 #index-grid, #about-grid{
     display: grid;
@@ -141,14 +137,6 @@ a:hover {
     justify-content: space-evenly;
     flex-direction: row;
 }
-/* P Style */
-
-/* #who-we-are p,
-#montepietra p,
-#seg p,
-#history p {
-    max-width: 750px;
-} */
 /* Decoration Style */
 .decoration {
     background-color: lightpink;
