@@ -1,7 +1,7 @@
 # PreEntrega3Trivino
 Tercera Preentrega curso de Desarrollo Web de coderhouse
 
-**Formato:** Archivos .json en carpeta comprimida + link al repositorio en GitHub.  Debe tener el nombre “PreEntrega3+Apellido”
+**Formato:** Archivos .json en carpeta comprimida + link al repositorio en GitHub.  Debe tener el nombre “PreEntrega3+Apellido"
 **Sugerencias:** Activar comentarios en el archivo
 ## Consigna
 - El proyecto completo deberá visibilizarse de manera correcta en dispositivos mobile y desktop. El mismo deberá estar configurado y con código SASS aplicado. Además, deberán mostrar uso de la correcta aplicación del SEO. 
