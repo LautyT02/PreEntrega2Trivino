@@ -1,0 +1,15 @@
+{
+  "name": "preentrega3trivino",
+  "version": "1.0.0",
+  "description": "Tercera Preentrega curso de Desarrollo Web de coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-lautyt02:LautyT02/PreEntrega2Trivino.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
