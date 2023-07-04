@@ -1,0 +1,49 @@
+//Index and About Grid SetUp
+#index-grid, #about-grid {
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "card1 dec"
+    "card2 dec"
+    "card3 dec"
+    "card4 dec"
+    "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr auto auto auto auto 1fr;
+}
+//NavBar, Decoration and Footer Grid Areas
+.navbar{
+    grid-area: nav;
+}
+.decoration{
+    grid-area: dec;
+}
+.footer{
+    grid-area: footer;
+}
+//Index Grid Areas
+#index-about{
+    grid-area: card1;
+}
+#index-contact{
+    grid-area: card2;
+}
+#index-products{
+    grid-area: card3;
+}
+#index-tech-serv{
+    grid-area: card4;
+}
+//About Grid Areas
+#who-we-are{
+    grid-area: card1;
+}
+#history{
+    grid-area: card2;
+}
+#seg{
+    grid-area: card3;
+}
+#montepietra{
+    grid-area: card4;
+}
