@@ -1,6 +1,7 @@
 @import "colors";
 @import "grids";
 @import "fonts";
+//@import "images";
 
 html {
     font-size: $html-font-size;
@@ -15,13 +16,14 @@ html {
     flex-wrap: wrap;
     font-weight: 700;
 }
+.logo {
+    width: 300px;
+}
 .dropdown-item {
     font-size: 1.5rem;
     font-weight: 700;
 }
-.logo {
-    width: 300px;
-}
+
 //UL Style
 ul {
     list-style-type: none;
