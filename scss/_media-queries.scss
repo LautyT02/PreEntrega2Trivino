@@ -1,0 +1,48 @@
+//Medium Screens
+@media (max-width:1050px){
+    .card img {
+        max-width: 400px;
+    }
+    html {
+        font-size: 10px;
+    }
+}
+@media (max-width:800px){
+    .card img {
+        max-width: 250px;
+    }
+}
+//Small Screens
+@media (max-width: 520px){
+    #index-grid, #about-grid{
+        grid-template-areas:
+        "nav nav"
+        "card1 card1"
+        "card2 card2"
+        "card3 card3"
+        "card4 card4"
+        "footer footer";
+    }
+    .decoration{
+        display: none;
+        grid-area: none;
+    }
+
+    .card {
+        margin: 10px 20px;
+        padding: 15px;
+    }
+    .card button {
+        margin: 7px;
+        padding: 7px;
+    }
+    .card-column, .double-image{
+        margin: 0px 17px;
+    }
+    .card img {
+        max-width: 200px;
+    }
+    .logo {
+        width: 200px;
+    }
+}
