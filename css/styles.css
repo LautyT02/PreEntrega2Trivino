@@ -40,4 +40,119 @@
 html {
   font-size: 20px; }
 
+.navbar {
+  padding: 15px;
+  font-size: 2rem;
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: 700; }
+
+.dropdown-item {
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+.logo {
+  width: 300px; }
+
+ul {
+  list-style-type: none; }
+
+.footer a, .card a, a.nav-link {
+  color: black;
+  text-decoration: none; }
+  .footer a:visited, .card a:visited, a.nav-link:visited {
+    color: black; }
+  .footer a:focus, .footer a:hover, .card a:focus, .card a:hover, a.nav-link:focus, a.nav-link:hover {
+    color: white; }
+
+/* Card Style */
+.card {
+  border-radius: 35px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 20px 40px;
+  padding: 30px;
+  background-color: rgba(166, 125, 204, 0.84); }
+  .card button {
+    margin: 15px;
+    border-color: white;
+    border: 1.5px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgba(0, 0, 255, 0.813); }
+  .card img {
+    max-width: 750px; }
+
+.card-content {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.card-column {
+  margin: 0px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.double-image {
+  margin: 0px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row; }
+
+.decoration {
+  background-color: lightpink; }
+
+.footer {
+  padding: 25px;
+  font-size: 2rem;
+  background-color: #638dd5; }
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+@media (max-width: 1050px) {
+  .card img {
+    max-width: 400px; }
+
+  html {
+    font-size: 10px; } }
+@media (max-width: 800px) {
+  .card img {
+    max-width: 250px; } }
+@media (max-width: 520px) {
+  #index-grid, #about-grid {
+    grid-template-areas: "nav nav" "card1 card1" "card2 card2" "card3 card3" "card4 card4" "footer footer"; }
+
+  .decoration {
+    display: none;
+    grid-area: none; }
+
+  .card {
+    margin: 10px 20px;
+    padding: 15px; }
+
+  .card button {
+    margin: 7px;
+    padding: 7px; }
+
+  .card-column, .double-image {
+    margin: 0px 17px; }
+
+  .card img {
+    max-width: 200px; }
+
+  .logo {
+    width: 200px; } }
+
 /*# sourceMappingURL=styles.css.map */
